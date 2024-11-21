@@ -1,9 +1,10 @@
 import React from 'react'
+import GradientTitle from './GradientTitle'
 
-function HeroMidCard() {
+export const HeroMidCard = () => {
    return (
       <section className="absolute bottom-1/4 left-20 z-20 flex flex-col gap-2 w-1/3.5">
-         <h2 className="text-6xl"><span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Expand</span> <br /> your world</h2>
+         <h2 className="text-6xl"><GradientTitle title={"Expand"} /> <br /> your world</h2>
 
          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat</p>
 
@@ -11,5 +12,3 @@ function HeroMidCard() {
       </section>
    )
 }
-
-export default HeroMidCard

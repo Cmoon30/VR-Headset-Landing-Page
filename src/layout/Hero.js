@@ -1,11 +1,11 @@
 import React from 'react'
-import Background from "../img/hero-bg.png"
-import HeroMidCard from '../component/HeroMidCard'
+import { HeroMidCard } from '../component/Card'
+import { HeroBackground } from "../img/IndexImg"
 
 function Hero() {
    return (
       <div className="relative text-white h-550">
-         <img className="h-550 w-full" src={Background} alt="bg" />
+         <img className="h-550 w-full" src={HeroBackground} alt="bg" />
 
          <HeroMidCard />
 
