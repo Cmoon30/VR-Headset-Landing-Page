@@ -39,7 +39,7 @@ function Footer() {
             <p>Copyright &copy; 2024 VR. All rights reserved</p>
             {Footer.map((text, i) => (
                <span className="hover:underline hover:cursor-pointer" key={i}>
-                  {i > 0 && "/"} {text}
+                  {i > 0 && <i className="select-none">/</i>} {text}
                </span>
             ))}
          </section>

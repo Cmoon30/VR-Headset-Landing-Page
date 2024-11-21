@@ -14,4 +14,3 @@ A landing page built with **React.js** and **Tailwind CSS** for a VR headset pro
 - **React.js**: JavaScript library for building user interfaces.
 - **Tailwind CSS**: A CSS framework for building designs quickly.
 - **Figma**: Used to design the layout (view the design [here](https://www.figma.com/design/FucckgoJdbHZqU4aSkvRav/Untitled?node-id=0-1&t=cwLRzUK4Wg0tYmAF-1)).
-# VR-Headset-Landing-Page
