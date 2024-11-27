@@ -80,7 +80,7 @@ const Performance = () => {
                </table>
 
                <section className="text-end w-full">
-                  <span className="text-secondary font-semibold cursor-pointer hover:underline">View More</span>
+                  <span className="text-secondary animation ease-in-out font-semibold cursor-pointer hover:underline">View More</span>
                </section>
             </div>
 

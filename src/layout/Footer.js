@@ -6,7 +6,7 @@ import { IoLogoInstagram, IoLogoYoutube } from "react-icons/io5";
 
 function Footer() {
    const Links = [
-      ["Home", "ABOUT", "OUR STORY", "OUR TEAM", "BLOG"],
+      ["HOME", "ABOUT", "OUR STORY", "OUR TEAM", "BLOG"],
       ["NEWS", "DELIVERY", "PAYMENTS", "CONTACT"],
    ];
 
@@ -21,7 +21,7 @@ function Footer() {
             <p className="row-span-1 col-span-1">Lorem ipsum dolor sit amet nulla adipiscing elit.</p>
             <div className="flex gap-2 ">
                {SocialIcon.map((Icon, i) => (
-                  <Icon key={i} className="row-span-1 col-span-1 text-5xl p-2 border-1 rounded-md" />
+                  <Icon key={i} className="animation ease-in-out delay-150 hover:scale-110 cursor-pointer row-span-1 col-span-1 text-5xl p-2 border-1 rounded-md hover:text-white hover:bg-secondary" />
                ))}
             </div>
          </section>
@@ -30,7 +30,7 @@ function Footer() {
             {Links.map((group, i) => (
                <div className="flex flex-col gap-1" key={i}>
                   {group.map((link, j) => (
-                     <p className="hover:underline hover:cursor-pointer" key={j}>{link}</p>
+                     <p className="animation ease-in-out hover:underline hover:cursor-pointer" key={j}>{link}</p>
                   ))}
                </div>
             ))}
@@ -38,9 +38,12 @@ function Footer() {
          <section className="row-span-1 col-span-2 grid grid-cols-[1fr,auto,auto,auto,auto,auto] gap-1 px-7 py-4 border-t-1">
             <p>Copyright &copy; 2024 VR. All rights reserved</p>
             {Footer.map((text, i) => (
-               <span className="hover:underline hover:cursor-pointer" key={i}>
-                  {i > 0 && <i className="select-none">/</i>} {text}
-               </span>
+               <>
+                  <span className="animation ease-in-out hover:underline hover:cursor-pointer" key={i}>
+                     {text}
+                  </span>
+                  {i > -1 && <i className="select-none">/</i>}
+               </>
             ))}
          </section>
       </div >
